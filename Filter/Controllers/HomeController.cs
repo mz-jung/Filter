@@ -24,7 +24,8 @@ namespace Filter.Controllers
             return "google";
         }
 
-        [RangeException]
+        //[RangeException]
+        [HandleError(ExceptionType = typeof(ArgumentOutOfRangeException), View = "RangeError")]
         public string RangeTest(int id) {
             if (id > 100) {
                 return String.Format("The id value is : {0}", id);

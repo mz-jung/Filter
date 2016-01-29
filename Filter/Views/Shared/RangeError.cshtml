@@ -1,9 +1,6 @@
-﻿@model int
+﻿@model HandleErrorInfo
 @{
-    Layout = null;
-
-    var count = 0;
-    var numver = Model / count;
+    ViewBag.Title = "Sorry. there was a problem";
 
 }
 
@@ -16,7 +13,7 @@
 </head>
 <body>
     <h2>Sorry!!!</h2>
-    <span>the value @Model was out of the expected range.</span>
+    <span>The Value @(((ArgumentOutOfRangeException)Model.Exception).ActualValue) was out of the excepted range.</span>
     <div>
         @Html.ActionLink("change value and try again", "Index")     
     </div>
