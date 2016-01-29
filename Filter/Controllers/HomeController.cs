@@ -15,7 +15,7 @@ namespace Filter.Controllers
         [Authorize(Users = "admin")]
         public String Index()
         {
-            return "go Filter stud";
+            return "go Filter studyyy";
         }
 
         [GoogleAuth]
