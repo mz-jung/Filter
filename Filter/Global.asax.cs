@@ -13,6 +13,7 @@ namespace Filter
         {
             AreaRegistration.RegisterAllAreas();
             RouteConfig.RegisterRoutes(RouteTable.Routes);
+            FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters); // Global.asax 파일에 전역필터 설정
         }
     }
 }

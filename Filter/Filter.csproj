@@ -124,25 +124,27 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\AdminController.cs" />
+    <Compile Include="Controllers\CustomerController.cs" />
     <Compile Include="Controllers\GoogleAccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="infrastructure\ActionFilterAttribute.cs" />
-    <Compile Include="infrastructure\CustomActionAttribute.cs" />
-    <Compile Include="infrastructure\CustomAuthAttribute.cs" />
-    <Compile Include="infrastructure\GoogleAuthAttribute.cs" />
-    <Compile Include="infrastructure\IActionFilter.cs" />
-    <Compile Include="infrastructure\IAuthenticationFilter.cs" />
-    <Compile Include="infrastructure\IResultFilter.cs" />
-    <Compile Include="infrastructure\ProfileActionAttribute.cs" />
-    <Compile Include="infrastructure\ProfileAllAttribute.cs" />
-    <Compile Include="infrastructure\ProfileResultAttribute.cs" />
-    <Compile Include="infrastructure\RangeExceptionAttribute.cs" />
+    <Compile Include="Infrastructure\ActionFilterAttribute.cs" />
+    <Compile Include="Infrastructure\CustomActionAttribute.cs" />
+    <Compile Include="Infrastructure\CustomAuthAttribute.cs" />
+    <Compile Include="Infrastructure\GoogleAuthAttribute.cs" />
+    <Compile Include="Infrastructure\IActionFilter.cs" />
+    <Compile Include="Infrastructure\IAuthenticationFilter.cs" />
+    <Compile Include="Infrastructure\IResultFilter.cs" />
+    <Compile Include="Infrastructure\ProfileActionAttribute.cs" />
+    <Compile Include="Infrastructure\ProfileAllAttribute.cs" />
+    <Compile Include="Infrastructure\ProfileResultAttribute.cs" />
+    <Compile Include="Infrastructure\RangeExceptionAttribute.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -164,6 +166,7 @@
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
     <Folder Include="Views\Admin\" />
+    <Folder Include="Views\CUstomer\" />
     <Folder Include="Views\GoogleAccount\" />
   </ItemGroup>
   <PropertyGroup>
