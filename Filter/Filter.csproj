@@ -132,12 +132,16 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="infrastructure\ActionFilterAttribute.cs" />
     <Compile Include="infrastructure\CustomActionAttribute.cs" />
     <Compile Include="infrastructure\CustomAuthAttribute.cs" />
     <Compile Include="infrastructure\GoogleAuthAttribute.cs" />
     <Compile Include="infrastructure\IActionFilter.cs" />
     <Compile Include="infrastructure\IAuthenticationFilter.cs" />
+    <Compile Include="infrastructure\IResultFilter.cs" />
     <Compile Include="infrastructure\ProfileActionAttribute.cs" />
+    <Compile Include="infrastructure\ProfileAllAttribute.cs" />
+    <Compile Include="infrastructure\ProfileResultAttribute.cs" />
     <Compile Include="infrastructure\RangeExceptionAttribute.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
