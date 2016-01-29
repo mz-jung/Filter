@@ -1,0 +1,20 @@
+﻿@model int
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+</head>
+<body>
+    <h2>Sorry!!!</h2>
+    <span>the value @Model was out of the expected range.</span>
+    <div>
+        @Html.ActionLink("change value and try again", "Index")     
+    </div>
+</body>
+</html>

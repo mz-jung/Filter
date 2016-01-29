@@ -19,9 +19,18 @@ namespace Filter.Controllers
         }
 
         [GoogleAuth]
-        [Authorize(Users = "jung@google.com")]
+        [Authorize(Users = "user@google.com")]
         public string List() {
             return "google";
+        }
+
+        [RangeException]
+        public string RangeTest(int id) {
+            if (id > 100) {
+                return String.Format("The id value is : {0}", id);
+            } else {
+                throw new ArgumentOutOfRangeException("id", id, "");                    
+            }
         }
     }
 }
