@@ -8,7 +8,7 @@ using System.Web.Mvc.Filters;
 using System.Web.Routing;
 using System.Web.Security;
 
-namespace Filter.infrastructure
+namespace Filter.Infrastructure
 {
     public class GoogleAuthAttribute: FilterAttribute, IAuthenticationFilter
     {

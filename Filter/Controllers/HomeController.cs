@@ -1,5 +1,5 @@
 ﻿//using Filter.infrastructure;
-using Filter.infrastructure;
+using Filter.Infrastructure;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -62,7 +62,7 @@ namespace Filter.Controllers
         protected override void OnResultExecuted(ResultExecutedContext filterContext)
         {
             timer.Stop();
-            filterContext.HttpContext.Response.Write(string.Format("<div>total elapsed time: {0:F6}</div>", timer.Elapsed.TotalSeconds));
+            filterContext.HttpContext.Response.Write(string.Format("<div>total elapsed time:::: {0:F6}</div>", timer.Elapsed.TotalSeconds));
         }
     }
 }

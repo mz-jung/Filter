@@ -5,7 +5,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace Filter.infrastructure
+namespace Filter.Infrastructure
 {
     public class ProfileResultAttribute : FilterAttribute, IResultFilter
     {

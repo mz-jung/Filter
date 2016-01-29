@@ -4,23 +4,27 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace Filter.infrastructure
+namespace Filter.Infrastructure
 {
-    public class CustomAuthAttribute : AuthorizeAttribute
+    public class CustomAuthAttribute: AuthorizeAttribute
     {
         private bool localAllowed;
 
-        public CustomAuthAttribute(bool AllowedParam) {
-            localAllowed = AllowedParam;
+        public CustomAuthAttribute(bool allowedParam)
+        {
+            localAllowed = allowedParam;
         }
 
-        protected override bool AuthorizeCore(HttpContextBase httpContext) {
-            if (httpContext.Request.IsLocal) {
+        protected override bool AuthorizeCore(HttpContextBase httpContext)
+        {
+            if (httpContext.Request.IsLocal)
+            {
                 return localAllowed;
-            } else {
+            }
+            else
+            {
                 return true;
             }
         }
-
     }
 }
