@@ -33,5 +33,11 @@ namespace Filter.Controllers
                 throw new ArgumentOutOfRangeException("id", id, "");                    
             }
         }
+
+        //[CustomAction] //CustomAction 안먹는데? 왜저래. 404안나옴.
+        [ProfileAction] //밑에껏도 안탐. 왜저래. 663page
+        public string FilterTest() { 
+            return "This is the FilterTest action";
+        }
     }
 }
